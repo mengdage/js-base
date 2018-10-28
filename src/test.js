@@ -1,6 +1,13 @@
-/* global React ReactDOM */
-const App = () => {
-  return React.CreateElement("h1", {}, "hello");
-};
+import React from "react";
+import ReactDOM from "react-dom";
+
+class App extends React.Component {
+  hello() {
+    return 5;
+  }
+  render() {
+    return <h1>hello</h1>;
+  }
+}
 
 ReactDOM.render(React.CreateElement(App), document.getElementById("root"));
